@@ -6,7 +6,10 @@ namespace palindrom
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          string input = Console.ReadLine();
+          var sut = new PalindromChecker();
+          var result = sut.IsPalindrom(input);
+          Console.WriteLine(result);
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace palindrom
 {
@@ -9,7 +10,24 @@ namespace palindrom
         // >> result: bool
         public bool IsPalindrom(string input)
         {
-            throw new NotImplementedException();
+            var reversedInput = string.Join("", input.Reverse());
+
+
+            if (input == reversedInput)
+            {
+
+                return true;
+            }
+
+            else
+            {
+                return false;
+            };
+
+
+
+
+
         }
     }
 }
